@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+  example-lambda-handler:
+    image: example-lambda-handler:latest
+    environment:
+      - JAVA_TOOL_OPTIONS=-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:5005
+    ports:
+      - 9000:8080
+      - 5005:5005
