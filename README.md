@@ -9,9 +9,10 @@ A simple example of using [Jib](https://github.com/GoogleContainerTools/jib) to 
 This will create an image named `example-lambda-handler:latest`.
 
 ## Starting the container
+The container can be started with a `docker` command or with Docker Compose.
 
 ### Command line
-`docker run -p 9000:8080 -e JAVA_TOOL_OPTIONS="-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:5005" example-lambda-handler:latest`
+`docker run -p 9000:8080 -p 5005:5005 -e JAVA_TOOL_OPTIONS="-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:5005" example-lambda-handler:latest`
 
 ### Compose
 `docker compose up`
