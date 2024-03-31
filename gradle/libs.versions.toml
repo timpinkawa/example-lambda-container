@@ -5,9 +5,9 @@ aws-lambda-java-events = "3.11.4"
 aws-lambda-java-runtimeinterfaceclient = "2.5.0"
 
 [libraries]
-aws-lambda-java-core = {module = "com.amazonaws:aws-lambda-java-core", version.ref = "aws-lambda-java-core"}
-aws-lambda-java-events = {module = "com.amazonaws:aws-lambda-java-events", version.ref = "aws-lambda-java-events"}
-aws-lambda-java-runtimeinterfaceclient = {module = "com.amazonaws:aws-lambda-java-runtime-interface-client", version.ref = "aws-lambda-java-runtimeinterfaceclient"}
+aws-lambda-java-core = { module = "com.amazonaws:aws-lambda-java-core", version.ref = "aws-lambda-java-core" }
+aws-lambda-java-events = { module = "com.amazonaws:aws-lambda-java-events", version.ref = "aws-lambda-java-events" }
+aws-lambda-java-runtimeinterfaceclient = { module = "com.amazonaws:aws-lambda-java-runtime-interface-client", version.ref = "aws-lambda-java-runtimeinterfaceclient" }
 
 [plugins]
-jib = {id = "com.google.cloud.tools.jib", version.ref = "jib"}
+jib = { id = "com.google.cloud.tools.jib", version.ref = "jib" }
