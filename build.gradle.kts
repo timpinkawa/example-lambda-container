@@ -1,6 +1,6 @@
 plugins {
     id("java")
-    id("com.google.cloud.tools.jib") version "3.4.0"
+    alias(libs.plugins.jib)
 }
 
 group = "net.timpinkawa"
@@ -11,11 +11,11 @@ repositories {
 }
 
 dependencies {
-    implementation("com.amazonaws:aws-lambda-java-core:1.2.3")
+    implementation(libs.aws.lambda.java.core)
     // Common AWS events
-    implementation("com.amazonaws:aws-lambda-java-events:3.11.3")
+    implementation(libs.aws.lambda.java.events)
     // Used to provide the entry point to launch the handler
-    implementation("com.amazonaws:aws-lambda-java-runtime-interface-client:2.4.1")
+    implementation(libs.aws.lambda.java.runtimeinterfaceclient)
 }
 
 jib {
