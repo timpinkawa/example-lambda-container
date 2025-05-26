@@ -2,7 +2,7 @@
 jib = "3.4.5"
 aws-lambda-java-core = "1.2.3"
 aws-lambda-java-events = "3.15.0"
-aws-lambda-java-runtimeinterfaceclient = "2.6.0"
+aws-lambda-java-runtimeinterfaceclient = "2.7.0"
 
 [libraries]
 aws-lambda-java-core = { module = "com.amazonaws:aws-lambda-java-core", version.ref = "aws-lambda-java-core" }
