@@ -27,7 +27,7 @@ jib {
             "net.timpinkawa.ExampleHandler::handleRequest")
     }
     from {
-        image = "public.ecr.aws/lambda/java:21"
+        image = "public.ecr.aws/lambda/java:25"
     }
     to {
         image = "example-lambda-handler:latest"
