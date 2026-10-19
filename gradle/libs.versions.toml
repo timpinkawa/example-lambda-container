@@ -1,6 +1,6 @@
 [versions]
 jib = "3.5.4"
-aws-lambda-java-core = "1.4.0"
+aws-lambda-java-core = "1.4.1"
 aws-lambda-java-events = "3.16.1"
 aws-lambda-java-runtimeinterfaceclient = "2.12.1"
 
